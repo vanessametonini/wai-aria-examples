@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAI-ARIA Table example</title>
+</head>
+<body>
+    <h1>WAI-ARIA table example</h1>
+    <div class="shopping-cart-table" role="grid">
+        <div class="cart-headers" role="rowgroup">
+            <div role="row">
+                <div role="rowheader" class="th-product-info">Produto</div>
+                <div role="rowheader" class="th-qty">Qtd</div>
+                <div role="rowheader" class="th-preco-ipi">Preço c/ IPI (R$)</div>
+                <div role="rowheader" class="th-desc">Desc. (%)</div>
+                <div role="rowheader" class="th-preco-desc">Preço c/ desc (R$)</div>
+                <div role="rowheader" class="th-total">Total (R$)</div>
+                <div role="rowheader" class="th-st">S.T (%)</div>
+                <div role="rowheader" class="th-total-st">Total S.T (R$)</div>
+                <div role="rowheader" class="th-ipi">IPI</div>
+            </div>
+        </div>
+        <div id="products-cart-list" class="products-cart-list" role="rowgroup">
+            <div class="item odd" role="row">
+                <div class="col-product-info" role="gridcell" title="Informações do produto">
+                    <p class="wishlisted">★</p>
+                    <div class="product-image">
+                        <img src="http://local.proshows.com.br/media/catalog/product/cache/3/thumbnail/110x/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/product-placeholder_2.png" alt="Universal Camera Charger">
+                    </div>
+                    <div class="product-shop">
+                        <a class="product-name" href="http://local.proshows.com.br/universal-camera-charger.html">Universal Camera Charger</a>
+                        <span class="sku">Cód. </span>
+                    </div>
+                    <div class="short-description">
+                        <p>Pellentesque ultrices mi justo, nec gravida quam porta nec. Nullam hendrerit at risus eu consequat. Nunc lobortis magna ac adipiscing cursus.</p>
+                        <ul class="categories">
+                            <li>Lexsen</li>
+                            <li>Caixas acústicas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-cart-qty" role="gridcell" title="Quantidade">
+                    <input name="cart[14][qty]" value="1" title="Qtd" class="input-text qty" maxlength="4" type="text">
+                    <a href="http://local.proshows.com.br/checkout/cart/delete/id/14/uenc/aHR0cDovL2xvY2FsLnByb3Nob3dzLmNvbS5ici9jaGVja291dC9jYXJ0Lw,,/" title="Remover item" class="btn-remove item-remove col-delete-item">Remover</a>
+                </div>
+                <div class="col-preco-ipi" role="gridcell" title="Preço com IPI (R$)">
+                    787,28
+                </div>
+                <div class="col-desc" role="gridcell" title="Desconto em %">
+                    25,50%
+                </div>
+                <div class="col-preco-desc" role="gridcell" title="Preço com desconto (R$)">
+                    <ul class="cart-price-list col-unit-price">
+                        <li>
+                            <span class="cart-price">
+                                <span class="price">R$19,00</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-total" role="gridcell" title="Total (R$)">
+                    <ul class="cart-price-list col-total-price">
+                        <li>
+                            <span class="cart-price">
+                                <span class="price">R$19,00</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-st" role="gridcell" title="Substituição tributária (%)">
+                    0%
+                </div>
+                <div class="col-total-st" role="gridcell" title="Total da substituição tributária em R$">
+                    600,00
+                </div>
+                <div class="col-ipi" role="gridcell" title="IPI">
+                    10%
+                </div>
+            </div>
+            <div class="item even" role="row">
+    <div class="col-product-info" role="gridcell" title="Informações do produto">
+                <p class="wishlisted">★</p>
+        <div class="product-image">
+            <img src="http://local.proshows.com.br/media/catalog/product/cache/3/thumbnail/110x/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/product-placeholder_2.png" alt="Coalesce: Functioning On Impatience T-Shirt">
+        </div>
+        <div class="product-shop">
+                    <a class="product-name" href="http://local.proshows.com.br/coalesce-functioning-on-impatience-t-shirt.html">Coalesce: Functioning On Impatience T-Shirt</a>
+            <span class="sku">Cód. </span>
+                            <dl class="item-options">
+                                                            <dt>Size</dt>
+                    <dd>Pequena                                            </dd>
+                                    </dl>
+                            </div>
+        <div class="short-description">
+            <p>Pellentesque ultrices mi justo, nec gravida quam porta nec. Nullam hendrerit at risus eu consequat. Nunc lobortis magna ac adipiscing cursus.</p>
+            <ul class="categories">
+                <li>Lexsen</li>                <li>Caixas acústicas</li>            </ul>
+                                            </div>
+    </div>
+    <div class="col-cart-qty" role="gridcell" title="Quantidade">
+        <input name="cart[15][qty]" value="1" title="Qtd" class="input-text qty" maxlength="4" type="text">
+        <a href="http://local.proshows.com.br/checkout/cart/delete/id/15/uenc/aHR0cDovL2xvY2FsLnByb3Nob3dzLmNvbS5ici9jaGVja291dC9jYXJ0Lw,,/" title="Remover item" class="btn-remove item-remove col-delete-item">Remover</a>
+            </div>
+    <div class="col-preco-ipi" role="gridcell" title="Preço com IPI (R$)">
+                787,28
+    </div>
+    <div class="col-desc" role="gridcell" title="Desconto em %">
+                25,50%
+    </div>
+    <div class="col-preco-desc" role="gridcell" title="Preço com desconto (R$)">
+                <ul class="cart-price-list col-unit-price">
+                                <li>
+                                    <span class="cart-price">
+                                        
+                                                    <span class="price">R$15,00</span>                                            </span>
+
+                            </li>
+            
+            <!-- inclusive price starts here -->
+                            </ul>
+    </div>
+    <div class="col-total" role="gridcell" title="Total (R$)">
+                <!--Sub total starts here -->
+            <ul class="cart-price-list col-total-price">
+                        <li>
+                                    <span class="cart-price">
+                
+                
+                                                            <span class="price">R$15,00</span>                                    
+                </span>
+                            </li>
+            
+                        </ul>
+    </div>
+    <div class="col-st" role="gridcell" title="Substituição tributária (%)">
+                0%
+    </div>
+    <div class="col-total-st" role="gridcell" title="Total da substituição tributária em R$">
+                600,00
+    </div>
+    <div class="col-ipi" role="gridcell" title="IPI">
+                10%
+    </div>
+</div>                                    <div class="item odd" role="row">
+    <div class="col-product-info" role="gridcell" title="Informações do produto">
+                <p class="wishlisted">★</p>
+        <div class="product-image">
+            <img src="http://local.proshows.com.br/media/catalog/product/cache/3/thumbnail/110x/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/product-placeholder_2.png" alt="Nokia 2610 Phone">
+        </div>
+        <div class="product-shop">
+                    <a class="product-name" href="http://local.proshows.com.br/nokia-2610-phone.html">Nokia 2610 Phone</a>
+            <span class="sku">Cód. </span>
+                            </div>
+        <div class="short-description">
+            <p>Pellentesque ultrices mi justo, nec gravida quam porta nec. Nullam hendrerit at risus eu consequat. Nunc lobortis magna ac adipiscing cursus.</p>
+            <ul class="categories">
+                <li>Lexsen</li>                <li>Caixas acústicas</li>            </ul>
+                                            </div>
+    </div>
+    <div class="col-cart-qty" role="gridcell" title="Quantidade">
+        <input name="cart[17][qty]" value="1" title="Qtd" class="input-text qty" maxlength="4" type="text">
+        <a href="http://local.proshows.com.br/checkout/cart/delete/id/17/uenc/aHR0cDovL2xvY2FsLnByb3Nob3dzLmNvbS5ici9jaGVja291dC9jYXJ0Lw,,/" title="Remover item" class="btn-remove item-remove col-delete-item">Remover</a>
+            </div>
+    <div class="col-preco-ipi" role="gridcell" title="Preço com IPI (R$)">
+                787,28
+    </div>
+    <div class="col-desc" role="gridcell" title="Desconto em %">
+                25,50%
+    </div>
+    <div class="col-preco-desc" role="gridcell" title="Preço com desconto (R$)">
+                <ul class="cart-price-list col-unit-price">
+                                <li>
+                                    <span class="cart-price">
+                                        
+                                                    <span class="price">R$149,99</span>                                            </span>
+
+                            </li>
+            
+            <!-- inclusive price starts here -->
+                            </ul>
+    </div>
+    <div class="col-total" role="gridcell" title="Total (R$)">
+                <!--Sub total starts here -->
+            <ul class="cart-price-list col-total-price">
+                        <li>
+                                    <span class="cart-price">
+                
+                
+                                                            <span class="price">R$149,99</span>                                    
+                </span>
+                            </li>
+            
+                        </ul>
+    </div>
+    <div class="col-st" role="gridcell" title="Substituição tributária (%)">
+                0%
+    </div>
+    <div class="col-total-st" role="gridcell" title="Total da substituição tributária em R$">
+                600,00
+    </div>
+    <div class="col-ipi" role="gridcell" title="IPI">
+                10%
+    </div>
+</div>                                    <div class="item last even" role="row">
+    <div class="col-product-info" role="gridcell" title="Informações do produto">
+                <p class="wishlisted">★</p>
+        <div class="product-image">
+            <img src="http://local.proshows.com.br/media/catalog/product/cache/3/thumbnail/110x/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/product-placeholder_2.png" alt="Steven by Steve Madden Pryme Pump">
+        </div>
+        <div class="product-shop">
+                    <a class="product-name" href="http://local.proshows.com.br/steven-by-steve-madden-pryme-pump.html">Steven by Steve Madden Pryme Pump</a>
+            <span class="sku">Cód. </span>
+                            <dl class="item-options">
+                                                            <dt>Shoe Size</dt>
+                    <dd>5                                            </dd>
+                                    </dl>
+                            </div>
+        <div class="short-description">
+            <p>Pellentesque ultrices mi justo, nec gravida quam porta nec. Nullam hendrerit at risus eu consequat. Nunc lobortis magna ac adipiscing cursus.</p>
+            <ul class="categories">
+                <li>Lexsen</li>                <li>Caixas acústicas</li>            </ul>
+                                            </div>
+    </div>
+    <div class="col-cart-qty" role="gridcell" title="Quantidade">
+        <input name="cart[18][qty]" value="1" title="Qtd" class="input-text qty" maxlength="4" type="text">
+        <a href="http://local.proshows.com.br/checkout/cart/delete/id/18/uenc/aHR0cDovL2xvY2FsLnByb3Nob3dzLmNvbS5ici9jaGVja291dC9jYXJ0Lw,,/" title="Remover item" class="btn-remove item-remove col-delete-item">Remover</a>
+            </div>
+    <div class="col-preco-ipi" role="gridcell" title="Preço com IPI (R$)">
+                787,28
+    </div>
+    <div class="col-desc" role="gridcell" title="Desconto em %">
+                25,50%
+    </div>
+    <div class="col-preco-desc" role="gridcell" title="Preço com desconto (R$)">
+                <ul class="cart-price-list col-unit-price">
+                                <li>
+                                    <span class="cart-price">
+                                        
+                                                    <span class="price">R$69,99</span>                                            </span>
+
+                            </li>
+            
+            <!-- inclusive price starts here -->
+                            </ul>
+    </div>
+    <div class="col-total" role="gridcell" title="Total (R$)">
+                <!--Sub total starts here -->
+            <ul class="cart-price-list col-total-price">
+                        <li>
+                                    <span class="cart-price">
+                
+                
+                                                            <span class="price">R$69,99</span>                                    
+                </span>
+                            </li>
+            
+                        </ul>
+    </div>
+    <div class="col-st" role="gridcell" title="Substituição tributária (%)">
+                0%
+    </div>
+    <div class="col-total-st" role="gridcell" title="Total da substituição tributária em R$">
+                600,00
+    </div>
+    <div class="col-ipi" role="gridcell" title="IPI">
+                10%
+    </div>
+</div>                            </div>
+      
+                    </div>
+</body>
+</html>
